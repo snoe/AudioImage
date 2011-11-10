@@ -1,16 +1,60 @@
+html, body {
+    margin: 0px;
+    padding: 10px;
+    background-image: -webkit-gradient(radial, center center, 0, center center, 800, from(white), to(#985));
+    background-image: -moz-radial-gradient(center, circle, white, #985);
+    background-color: #985;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
 #container {
     position: relative;
+    display: inline-block;
+    float:left;
+    padding: 0 20px;
 }
+
 #cursor {
-    position: absolute;
-    top:0;
-    left:0;
-    width: 300px;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
     height: 1px;
     background-color: orange;
 }
 
-canvas {
-    border: 1px solid rgba(128,0,0,0.5);
+#colorblock {
+    background-color: black;
+    padding: 10px;
+}
+
+#canvas {
+    background-color: white;
+    border: 1px solid #ccc; 
     box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+}
+
+#controls > * {
+    display: table-cell;
+}
+
+#clear {
+    color: black;
+    margin: 10px;
+    padding: 10px;
+    background-color: orange;
+    border: 1px solid orange; 
+    border-radius: 5px; 
+}
+
+#clear:hover {
+    border: 1px solid black;
+}
+
+#clear:active {
+    background-color: white;
 }

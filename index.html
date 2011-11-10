@@ -1,13 +1,31 @@
 <html>
 <head>
+<title>Draw stuff</title>
 <link rel="stylesheet" type="text/css" href="audioimage.css">
 <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
 <script src="audioimage.js"></script>
 </head>
 <body>
+<h1>Draw!</h1>
 <div id="container">
     <div id="cursor"></div>
-    <canvas id="canvas" width="300" height="300"></canvas>
+    <canvas id="canvas" width="500" height="500"></canvas>
 </div>
+
+<div id="controls">
+    <label for="h">Hue:</label>
+    <input id="h" type="range" min="0" max="360" step="1" value="212">
+
+    <label for="s">Saturation:</label>
+    <input id="s" type="range" min="0" max="100" step="1" value="80">
+
+    <label for="l">Luma:</label>
+    <input id="l" type="range" min="0" max="100" step="1" value="80">
+
+    <canvas id="colorblock" width="50" height="50"></canvas>
+
+    <button id="clear">CLEAR</button>
+</div>
+
 </body>
 </html>
